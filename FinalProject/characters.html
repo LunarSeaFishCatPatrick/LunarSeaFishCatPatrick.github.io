@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character Guide</title>
+    <link rel="icon" href="/images/Kiana.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Character Guide</h1>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="characters.html">Characters</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Element Filter Section -->
+      <section class="filter">
+        <button id="allElementsButton" class="filter-button active">
+          <img
+            src="../images/elements/Element_Omni.webp"
+            alt="All"
+            class="filter-icon" />
+          <span>All</span>
+        </button>
+        <button id="pyroButton" class="filter-button">
+          <img
+            src="../images/elements/pyro.png"
+            alt="Pyro"
+            class="filter-icon" />
+          <span>Pyro</span>
+        </button>
+        <button id="cryoButton" class="filter-button">
+          <img
+            src="../images/elements/cryo.png"
+            alt="Cryo"
+            class="filter-icon" />
+          <span>Cryo</span>
+        </button>
+        <button id="hydroButton" class="filter-button">
+          <img
+            src="../images/elements/hyrdro.png"
+            alt="Hydro"
+            class="filter-icon" />
+          <span>Hydro</span>
+        </button>
+        <button id="electroButton" class="filter-button">
+          <img
+            src="../images/elements/electro.png"
+            alt="Electro"
+            class="filter-icon" />
+          <span>Electro</span>
+        </button>
+        <button id="anemoButton" class="filter-button">
+          <img
+            src="../images/elements/anemo.png"
+            alt="Anemo"
+            class="filter-icon" />
+          <span>Anemo</span>
+        </button>
+        <button id="geoButton" class="filter-button">
+          <img src="../images/elements/geo.png" alt="Geo" class="filter-icon" />
+          <span>Geo</span>
+        </button>
+        <button id="dendroButton" class="filter-button">
+          <img
+            src="../images/elements/dendro.png"
+            alt="Dendro"
+            class="filter-icon" />
+          <span>Dendro</span>
+        </button>
+      </section>
+
+      <!-- Weapon Filter Section -->
+      <section class="filter">
+        <button id="allWeaponsButton" class="filter-button">
+          <img
+            src="../images/weapons/weapons.webp"
+            alt="All"
+            class="filter-icon" />
+          <span>All</span>
+        </button>
+        <button id="swordButton" class="filter-button">
+          <img
+            src="../images/weapons/sword.webp"
+            alt="Sword"
+            class="filter-icon" />
+          <span>Sword</span>
+        </button>
+        <button id="claymoreButton" class="filter-button">
+          <img
+            src="../images/weapons/claymore.webp"
+            alt="Claymore"
+            class="filter-icon" />
+          <span>Claymore</span>
+        </button>
+        <button id="bowButton" class="filter-button">
+          <img src="../images/weapons/bow.webp" alt="Bow" class="filter-icon" />
+          <span>Bow</span>
+        </button>
+        <button id="polearmButton" class="filter-button">
+          <img
+            src="../images/weapons/polearm.webp"
+            alt="Polearm"
+            class="filter-icon" />
+          <span>Polearm</span>
+        </button>
+        <button id="catalystButton" class="filter-button">
+          <img
+            src="../images/weapons/catalyst.webp"
+            alt="Catalyst"
+            class="filter-icon" />
+          <span>Catalyst</span>
+        </button>
+      </section>
+      <section class="search-box">
+        <input
+          type="text"
+          id="characterSearch"
+          placeholder="Search for a character..."
+          class="search-input" />
+      </section>
+
+      <!-- Character Guide Section -->
+      <section class="character-guide">
+        <article class="character" data-element="pyro" data-weapon="polearm">
+          <a href="../characters/arlecchino.html">
+            <img
+              src="../images/Arlecchino_Icon.webp"
+              alt="Arlecchino from Genshin Impact"
+              class="character-image" />
+          </a>
+          <a href="../characters/clorinde.html" style="text-decoration: none">
+            <h3 class="character-name">Arlecchino</h3>
+          </a>
+        </article>
+        <article class="character" data-element="anemo" data-weapon="bow">
+          <a href="../characters/clorinde.html">
+            <img
+              src="../images/Chasca_Icon.webp"
+              alt="Clorinde from Genshin Impact"
+              class="character-image" />
+          </a>
+          <a href="../characters/clorinde.html" style="text-decoration: none">
+            <h3 class="character-name">Chasca</h3>
+          </a>
+        </article>
+        <article class="character" data-element="cryo" data-weapon="catalyst">
+          <a href="../characters/clorinde.html">
+            <img
+              src="../images/Citlali_Icon.webp"
+              alt="Clorinde from Genshin Impact"
+              class="character-image" />
+          </a>
+          <a href="../characters/clorinde.html" style="text-decoration: none">
+            <h3 class="character-name">Citlali</h3>
+          </a>
+        </article>
+        <article class="character" data-element="electro" data-weapon="sword">
+          <a href="../characters/clorinde.html">
+            <img
+              src="../images/Clorinde_Icon.webp"
+              alt="Clorinde from Genshin Impact"
+              class="character-image" />
+          </a>
+          <a href="../characters/clorinde.html" style="text-decoration: none">
+            <h3 class="character-name">Clorinde</h3>
+          </a>
+        </article>
+        <article class="character" data-element="dendro" data-weapon="polearm">
+          <a href="../characters/clorinde.html">
+            <img
+              src="../images/Emilie_Icon.webp"
+              alt="Clorinde from Genshin Impact"
+              class="character-image" />
+          </a>
+          <a href="../characters/clorinde.html" style="text-decoration: none">
+            <h3 class="character-name">Emilie</h3>
+          </a>
+        </article>
+        <article class="character" data-element="cryo" data-weapon="claymore">
+          <a href="../characters/clorinde.html">
+            <img
+              src="../images/Eula_Icon.webp"
+              alt="Clorinde from Genshin Impact"
+              class="character-image" />
+          </a>
+          <a href="../characters/clorinde.html" style="text-decoration: none">
+            <h3 class="character-name">Eula</h3>
+          </a>
+        </article>
+        <article class="character" data-element="hydro" data-weapon="sword">
+          <a href="../characters/furina.html">
+            <img
+              src="../images/FurinaIcon.webp"
+              alt="Furina from Genshin Impact"
+              class="character-image" />
+          </a>
+          <a href="../characters/furina.html" style="text-decoration: none">
+            <h3 class="character-name">Furina</h3>
+          </a>
+        </article>
+        <article class="character" data-element="cryo" data-weapon="bow">
+          <a href="">
+            <img
+              src="../images/ganyu.webp"
+              alt="Ganyu from Genshin Impact"
+              class="character-image" />
+          </a>
+          <a href="../characters/clorinde.html" style="text-decoration: none">
+            <h3 class="character-name">Ganyu</h3>
+          </a>
+        </article>
+        <article class="character" data-element="pyro" data-weapon="claymore">
+          <a href="">
+            <img
+              src="../images/Mavuika_Icon.webp"
+              alt="Mavuika from Genshin Impact"
+              class="character-image" />
+          </a>
+          <a href="../characters/clorinde.html" style="text-decoration: none">
+            <h3 class="character-name">Mavuika</h3>
+          </a>
+        </article>
+        <article class="character" data-element="dendro" data-weapon="catalyst">
+          <a href="../characters/nahida.html">
+            <img
+              src="../images/Nahida_Icon.webp"
+              alt="Clorinde from Genshin Impact"
+              class="character-image" />
+          </a>
+          <a href="../characters/nahida.html" style="text-decoration: none">
+            <h3 class="character-name">Nahida</h3>
+          </a>
+        </article>
+        <article class="character" data-element="geo" data-weapon="claymore">
+          <a href="../characters/navia.html">
+            <img
+              src="../images/Navia_Icon.webp"
+              alt="Navia from Genshin Impact"
+              class="character-image" />
+          </a>
+          <a href="../characters/navia.html" style="text-decoration: none">
+            <h3 class="character-name">Navia</h3>
+          </a>
+        </article>
+        <article class="character" data-element="hydro" data-weapon="catalyst">
+          <a href="../characters/neuvillette.html">
+            <img
+              src="../images/Neuvillette_Icon.webp"
+              alt="Neuvillette from Genshin Impact"
+              class="character-image" />
+          </a>
+          <a
+            href="../characters/neuvillette.html"
+            style="text-decoration: none">
+            <h3 class="character-name">Neuvillette</h3>
+          </a>
+        </article>
+        <article class="character" data-element="electro" data-weapon="polearm">
+          <a href="../characters/raiden.html">
+            <img
+              src="../images/Raiden_Shogun_Icon.webp"
+              alt="Raiden Shogun from Genshin Impact"
+              class="character-image" />
+          </a>
+          <a href="../characters/raiden.html" style="text-decoration: none">
+            <h3 class="character-name">Raiden Shogun</h3>
+          </a>
+        </article>
+        <article class="character" data-element="anemo" data-weapon="bow">
+          <a href="../characters/clorinde.html">
+            <img
+              src="../images/Venti_Icon.webp"
+              alt="Clorinde from Genshin Impact"
+              class="character-image" />
+          </a>
+          <a href="../characters/clorinde.html" style="text-decoration: none">
+            <h3 class="character-name">Venti</h3>
+          </a>
+        </article>
+        <article class="character" data-element="geo" data-weapon="sword">
+          <a href="../characters/clorinde.html">
+            <img
+              src="../images/Xilonen_Icon.webp"
+              alt="Clorinde from Genshin Impact"
+              class="character-image" />
+          </a>
+          <a href="../characters/clorinde.html" style="text-decoration: none">
+            <h3 class="character-name">Xilonen</h3>
+          </a>
+        </article>
+        <article class="character" data-element="geo" data-weapon="polearm">
+          <a href="../characters/clorinde.html">
+            <img
+              src="../images/Zhongli_Icon.webp"
+              alt="Clorinde from Genshin Impact"
+              class="character-image" />
+          </a>
+          <a href="../characters/clorinde.html" style="text-decoration: none">
+            <h3 class="character-name">Zhongli</h3>
+          </a>
+        </article>
+      </section>
+    </main>
+    <script src="../javascripts/Filter.js"></script>
+  </body>
+</html>

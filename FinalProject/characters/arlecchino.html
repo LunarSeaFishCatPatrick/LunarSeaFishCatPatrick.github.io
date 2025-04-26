@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arlecchino Guide</title>
+    <link rel="icon" href="../images/Kiana.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Arlecchino Guide</h1>
+      <nav class="navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="character-details">
+        <h2>Arlecchino</h2>
+        <a href="arlecchino.html">
+          <img
+            src="../images/Arlecchino_Icon.webp"
+            alt="Arlecchino from Genshin Impact"
+            class="character-image" />
+        </a>
+        <div class="role">
+          <p><strong>Element:</strong> Pyro</p>
+          <p><strong>Weapon:</strong> Polearm</p>
+          <p><strong>Role:</strong> DPS</p>
+        </div>
+        <div class="btn">
+          <button id="arleLore">Lore</button>
+          <button id="arleGuide">Quick Guide</button>
+          <button id="arleGalleryBtn">Gallery</button>
+          <button id="arleMusicVideo">Music/Video</button>
+        </div>
+        <p class="description" id="arlenover">
+          Arlecchino, also known as "The Knave," is one of the Fatui Harbingers.
+          Fierce and commanding, she leads the House of the Hearth, an orphanage
+          that produces loyal Fatui agents. Her ideals of strength and
+          unwavering obedience drive her mercilessly, making her one of the most
+          feared figures within the Fatui ranks.
+        </p>
+        <p class="description" id="arleDescription" style="display: none">
+          Arlecchino is driven by an unrelenting belief in absolute loyalty and
+          personal strength. As the overseer of the House of the Hearth, she
+          raises abandoned children with strict discipline and loyalty to the
+          Fatui cause. Despite her cold and ruthless nature, she has a twisted
+          sense of care for the orphans under her charge. Her actions and
+          ideology make her one of the most complex and morally ambiguous
+          characters among the Harbingers.
+        </p>
+        <img
+          src="../images/Arlecchino_5.3_-_euphorysm.png"
+          id="quickGuideImagearle"
+          alt="Arlecchino Quick Guide"
+          style="display: none" />
+        <div id="arleGallery" style="display: none">
+          <div class="gallery-grid">
+            <img
+              src="https://i.pinimg.com/736x/04/e6/ce/04e6ce5581065a1c96d07d85ea59584a.jpg"
+              alt="Arlecchino Image 1" />
+            <img
+              src="https://i.pinimg.com/736x/f0/99/88/f09988418d0b0fe89089aa212585e9a5.jpg"
+              alt="Arlecchino Image 2" />
+            <img
+              src="https://i.pinimg.com/736x/d7/c1/d7/d7c1d79a78d3d2e041fd036603db1028.jpg"
+              alt="Arlecchino Image 3" />
+            <img
+              src="https://i.pinimg.com/736x/4e/1b/25/4e1b25d3702fb604b896047938083a5d.jpg"
+              alt="Arlecchino Image 4" />
+            <img
+              src="https://i.pinimg.com/736x/2d/dd/d4/2dddd47c5c7b39b05cfa8391e2441a8a.jpg"
+              alt="Arlecchino Image 5" />
+            <img
+              src="https://i.pinimg.com/736x/eb/00/95/eb0095dca7e8074e58b08670f5d0f4c9.jpg"
+              alt="Arlecchino Image 6" />
+            <img
+              src="https://i.pinimg.com/736x/fe/25/c9/fe25c942ae1b2d9b1beff834ad5284cb.jpg"
+              alt="Arlecchino Image 7" />
+            <img
+              src="https://i.pinimg.com/736x/12/77/67/12776736ba69ef322ac1b3ab83589efc.jpg"
+              alt="Arlecchino Image 8" />
+          </div>
+        </div>
+        <div id="arleMusicVideoSection" style="display: none">
+          <h3>Character Demo - "Arlecchino: Lullaby" | Genshin Impact</h3>
+          <iframe
+            width="560"
+            height="315"
+            class="videos"
+            src="https://www.youtube.com/embed/TnYFVP3c_bs?si=Z4PT1bHQT2ZMuG1E"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen></iframe>
+        </div>
+        <div class="navigation-buttons">
+          <a href="neuvillette.html" class="btn-nav">Back</a>
+          <a href="clorinde.html" class="btn-nav">Next</a>
+        </div>
+      </section>
+    </main>
+    <div id="imageModal" class="modal" style="display: none">
+      <span class="close">&times;</span>
+      <button class="nav-btn prev-btn">&#10094;</button>
+      <img class="modal-content" id="modalImage" />
+      <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+    <script src="../javascripts/Arle.js"></script>
+  </body>
+</html>

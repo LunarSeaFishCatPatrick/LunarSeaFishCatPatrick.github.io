@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nahida Guide</title>
+    <link rel="icon" href="../images/Nahida.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Nahida Guide</h1>
+      <nav class="navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="character-details">
+        <h2>Nahida</h2>
+        <a href="nahida.html">
+          <img
+            src="../images/Nahida_Icon.webp"
+            alt="Nahida from Genshin Impact"
+            class="character-image" />
+        </a>
+        <div class="role">
+          <p><strong>Element:</strong> Dendro</p>
+          <p><strong>Weapon:</strong> Catalyst</p>
+          <p><strong>Role:</strong> Support</p>
+        </div>
+        <div class="btn">
+          <button id="NLore">Lore</button>
+          <button id="NGuide">Quick Guide</button>
+          <button id="NGallery">Gallery</button>
+          <button id="NMusicVideo">Music/Video</button>
+        </div>
+        <p class="description" id="nahidaover">
+          Nahida is a wise and compassionate character from Genshin Impact. As
+          the Dendro Archon, she is deeply attuned to the natural world and its
+          harmony. Her abilities as a Dendro character make her an exceptional
+          support unit who enhances her allies' potential in battle.
+        </p>
+        <p class="description" id="NahidaDescription" style="display: none">
+          Nahida is revered for her intelligence, empathy, and connection to
+          Sumeru's wisdom. As a wielder of the Dendro element and a catalyst,
+          she combines her profound understanding of nature with her supportive
+          skills to empower her team and protect the balance of the world.
+        </p>
+        <img
+          src="../images/Nahida-Infographic-2048x1638.png"
+          id="quickGuideImageNahida"
+          alt="Nahida Quick Guide"
+          style="display: none" />
+        <div id="NahidaGallery" style="display: none">
+          <div class="gallery-grid">
+            <img
+              src="https://i.pinimg.com/474x/05/a5/90/05a5900b7182723253bb3eb60f12cd94.jpg"
+              id="pic1"
+              alt="Nahida Image 1" />
+            <img
+              src="https://i.pinimg.com/736x/c6/d9/65/c6d9653598997522d35eb8dfdbc8c812.jpg"
+              id="pic2"
+              alt="Nahida Image 2" />
+            <img
+              src="https://i.pinimg.com/474x/dd/13/ff/dd13ff72ee4a7b99345c0b95e5bf831f.jpg"
+              id="pic3"
+              alt="Nahida Image 3" />
+            <img
+              src="https://i.pinimg.com/474x/f6/15/71/f61571a13251e964d5b91c7d310bdaca.jpg"
+              id="pic4"
+              alt="Nahida Image 4" />
+            <img
+              src="https://i.pinimg.com/474x/72/81/68/728168ab5b6c5acbac27f4968c466a14.jpg"
+              id="pic5"
+              alt="Nahida Image 5" />
+            <img
+              src="https://i.pinimg.com/474x/9c/13/c7/9c13c7ffe635e10fadc1a18f42bdf199.jpg"
+              id="pic6"
+              alt="Nahida Image 6" />
+            <img
+              src="https://i.pinimg.com/736x/23/90/40/239040b03a369601387a73fc6eb73dcf.jpg"
+              id="pic7"
+              alt="Nahida Image 7" />
+            <img
+              src="https://i.pinimg.com/474x/19/87/bd/1987bdde947c98816fb13cfd143c85d8.jpg"
+              id="pic8"
+              alt="Nahida Image 8" />
+          </div>
+        </div>
+        <div id="NahidaMusicVideoSection" style="display: none">
+          <h3>Character Demo - "Nahida: Boundless Bliss" | Genshin Impact</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/dpZhGzZ3hNc?si=zobwAxZTsy3OzxGU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            class="videos"></iframe>
+        </div>
+        <div class="navigation-buttons">
+          <a href="previous_character.html" class="btn-nav">Back</a>
+          <a href="navia.html" class="btn-nav">Next</a>
+        </div>
+      </section>
+    </main>
+    <div id="imageModal" class="modal" style="display: none">
+      <span class="close">&times;</span>
+      <button class="nav-btn prev-btn">&#10094;</button>
+      <img class="modal-content" id="modalImage" />
+      <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+    <script src="../javascripts/nahida.js"></script>
+  </body>
+</html>

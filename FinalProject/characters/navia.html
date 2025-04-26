@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navia Guide</title>
+    <link rel="icon" href="../images/Kiana.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Navia Guide</h1>
+      <nav class="navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="character-details">
+        <h2>Navia</h2>
+        <a href="navia.html">
+          <img
+            src="../images/Navia_Icon.webp"
+            alt="Navia from Genshin Impact"
+            class="character-image" />
+        </a>
+        <div class="role">
+          <p><strong>Element:</strong> Geo</p>
+          <p><strong>Weapon:</strong> Claymore</p>
+          <p><strong>Role:</strong> DPS/Support</p>
+        </div>
+        <div class="btn">
+          <button id="NLore">Lore</button>
+          <button id="NGuide">Quick Guide</button>
+          <button id="NGallery">Gallery</button>
+          <button id="NMusicVideo">Music/Video</button>
+        </div>
+        <p class="description" id="naviaover">
+          Navia is a charismatic and kind-hearted character from Genshin Impact.
+          As a dedicated protector of justice, she is deeply connected to her
+          homeland and its people. Her abilities as a Geo character make her a
+          powerhouse in battle, capable of both defense and offense.
+        </p>
+        <p class="description" id="NaviaDescription" style="display: none">
+          Navia is known for her confidence, charm, and unwavering sense of
+          duty. She acts as a beacon of hope and resilience in her region. As a
+          wielder of the Geo element and claymore, she combines her strength
+          with her compassion to protect her allies and uphold justice.
+        </p>
+        <img
+          src="../images/Navia_4.6_update_-_euphorysm.png"
+          id="quickGuideImageNavia"
+          alt="Navia Quick Guide"
+          style="display: none" />
+        <div id="NaviaGallery" style="display: none">
+          <div class="gallery-grid">
+            <img
+              src="https://i.pinimg.com/736x/0a/a4/e0/0aa4e0749c53512b470e300f97425b86.jpg"
+              id="pic1"
+              alt="Navia Image 1" />
+            <img
+              src="https://i.pinimg.com/736x/ac/e1/c8/ace1c8dff6ddebad33eec9540890a570.jpg"
+              id="pic2"
+              alt="Navia Image 2" />
+            <img
+              src="https://i.pinimg.com/736x/ba/22/c4/ba22c41444637285fbf482734adee921.jpg"
+              id="pic3"
+              alt="Navia Image 3" />
+            <img
+              src="https://i.pinimg.com/474x/b0/fb/e7/b0fbe79e9ca1bd1cf8f75f2958a95163.jpg"
+              id="pic4"
+              alt="Navia Image 4" />
+            <img
+              src="https://i.pinimg.com/736x/87/ac/64/87ac6477abe5867cd215e10f31831116.jpg"
+              id="pic5"
+              alt="Navia Image 5" />
+            <img
+              src="https://i.pinimg.com/474x/77/fc/48/77fc486f550191121cbe31b334238c9a.jpg"
+              id="pic6"
+              alt="Navia Image 6" />
+            <img
+              src="https://i.pinimg.com/474x/bd/aa/e1/bdaae103318d0e082bb5deff8ae56cd4.jpg"
+              id="pic7"
+              alt="Navia Image 7" />
+            <img
+              src="https://i.pinimg.com/736x/a0/c3/22/a0c322de29e6cec6ad2b9a7f35b84699.jpg"
+              id="pic8"
+              alt="Navia Image 8" />
+          </div>
+        </div>
+        <div id="NaviaMusicVideoSection" style="display: none">
+          <h3>Character Demo - "Navia: Radiant Justice" | Genshin Impact</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/o1EEvbQXe6Y?si=c-7WyzwQrWI1tYyb"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            class="videos"></iframe>
+        </div>
+        <div class="navigation-buttons">
+          <a href="nahida.html" class="btn-nav">Back</a>
+          <a href="neuvillette.html" class="btn-nav">Next</a>
+        </div>
+      </section>
+    </main>
+    <div id="imageModal" class="modal" style="display: none">
+      <span class="close">&times;</span>
+      <button class="nav-btn prev-btn">&#10094;</button>
+      <img class="modal-content" id="modalImage" />
+      <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+    <script src="../javascripts/navia.js"></script>
+  </body>
+</html>
