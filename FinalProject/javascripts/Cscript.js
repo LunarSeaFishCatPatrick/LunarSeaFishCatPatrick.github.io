@@ -29,6 +29,7 @@ clorindeQuickGuideButton.onclick = function () {
 };
 
 clorindeGalleryButton.onclick = function () {
+   clorindeoverview.style.display = "none";
   clorindeDescription.style.display = "none";
   clorindeQuickGuideImage.style.display = "none";
   clorindeGallerySection.style.display = "block";
@@ -36,6 +37,7 @@ clorindeGalleryButton.onclick = function () {
 };
 
 clorindeMusicVideoButton.onclick = function () {
+   clorindeoverview.style.display = "none";
   clorindeDescription.style.display = "none";
   clorindeQuickGuideImage.style.display = "none";
   clorindeGallerySection.style.display = "none";
