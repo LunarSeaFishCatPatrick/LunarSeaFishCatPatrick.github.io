@@ -63,16 +63,20 @@ function login() {
   // Extract the username part of the email (before @)
   const username = email.split("@")[0];
 
+  // Save the logged-in user to localStorage
+  localStorage.setItem("loggedInUser", JSON.stringify({ email, username }));
+
   // Successful login
   alert(`Welcome back, ${username}!`);
 
   // Hide the login form
   document.getElementById("login-container").classList.add("hidden");
 
-  // Optionally, update the UI to reflect the logged-in state
+  // Update the login button to reflect the logged-in state
   const loginButton = document.getElementById("login-button");
   loginButton.textContent = `Logged in as ${username}`;
-  loginButton.style.pointerEvents = "none"; // Disable clicking
+  loginButton.onclick = logout; // Change the button's behavior to logout
+  loginButton.style.pointerEvents = "auto";
   loginButton.style.backgroundColor = "#28a745"; // Change button color to green
 }
 
@@ -149,3 +153,19 @@ function closeForm() {
 
 // // Example usage of deleteUserByEmail
 // deleteUserByEmail("qwertyuiop");
+window.onload = function () {
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  const loginButton = document.getElementById("login-button");
+
+  if (loggedInUser) {
+    loginButton.textContent = `Logged in as ${loggedInUser.username}`;
+    loginButton.onclick = logout; // Set the button to log out
+    loginButton.style.pointerEvents = "auto";
+    loginButton.style.backgroundColor = "#28a745";
+  } else {
+    loginButton.textContent = "Login";
+    loginButton.onclick = showLoginForm; // Set the button to show the login form
+    loginButton.style.pointerEvents = "auto";
+    loginButton.style.backgroundColor = "";
+  }
+};
