@@ -1,16 +1,14 @@
-const mavuikaLoreButton = document.getElementById("mavuikaLore");
-const mavuikaQuickGuideButton = document.getElementById("mavuikaGuide");
-const mavuikaGalleryButton = document.getElementById("mavuikaGalleryBtn");
-const mavuikaMusicVideoButton = document.getElementById("mavuikaMusicVideo");
-const mavuikaDescription = document.getElementById("mavuikaDescription");
-const mavuikaQuickGuideImage = document.getElementById(
-  "quickGuideImagemavuika"
-);
-const mavuikaGallerySection = document.getElementById("mavuikaGallery");
+const mavuikaLoreButton = document.getElementById("MLore");
+const mavuikaQuickGuideButton = document.getElementById("MGuide");
+const mavuikaGalleryButton = document.getElementById("MGallery");
+const mavuikaMusicVideoButton = document.getElementById("MMusicVideo");
+const mavuikaDescription = document.getElementById("MavuikaDescription");
+const mavuikaQuickGuideImage = document.getElementById("quickGuideImageMavuika");
+const mavuikaGallerySection = document.getElementById("MavuikaGallery");
 const mavuikaMusicVideoSection = document.getElementById(
-  "mavuikaMusicVideoSection"
+  "MavuikaMusicVideoSection"
 );
-const mavuikaOverview = document.getElementById("mavuikanover");
+const mavuikaOverview = document.getElementById("mavuikaover");
 
 mavuikaLoreButton.onclick = function () {
   mavuikaDescription.style.display = "block";
@@ -29,19 +27,19 @@ mavuikaQuickGuideButton.onclick = function () {
 };
 
 mavuikaGalleryButton.onclick = function () {
+  mavuikaOverview.style.display = "none";
   mavuikaDescription.style.display = "none";
   mavuikaQuickGuideImage.style.display = "none";
   mavuikaGallerySection.style.display = "block";
   mavuikaMusicVideoSection.style.display = "none";
-  mavuikaOverview.style.display = "none";
 };
 
 mavuikaMusicVideoButton.onclick = function () {
   mavuikaDescription.style.display = "none";
+  mavuikaOverview.style.display = "none";
   mavuikaQuickGuideImage.style.display = "none";
   mavuikaGallerySection.style.display = "none";
   mavuikaMusicVideoSection.style.display = "block";
-  mavuikaOverview.style.display = "none";
 };
 
 const modal = document.getElementById("imageModal");
@@ -51,7 +49,7 @@ const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 
 const galleryImages = Array.from(
-  document.querySelectorAll("#mavuikaGallery .gallery-grid img")
+  document.querySelectorAll("#MavuikaGallery .gallery-grid img")
 ).slice(0, 8);
 
 let currentImgIndex = 0;
