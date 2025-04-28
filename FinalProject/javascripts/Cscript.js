@@ -48,7 +48,7 @@ const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
 
 const galleryImages = Array.from(
-  document.querySelectorAll("#CGallery .gallery-grid img")
+  document.querySelectorAll("#ClorindeGallery .gallery-grid img")
 ).slice(0, 8);
 
 let currentImgIndex = 0;
