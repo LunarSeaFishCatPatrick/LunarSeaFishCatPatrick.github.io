@@ -1,1 +1,106 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ganyu Guide</title>
+    <link rel="icon" href="../images/Ganyu.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ganyu Guide</h1>
+      <nav class="navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="character-details">
+        <h2>Ganyu</h2>
+        <a href="ganyu.html">
+          <img
+            src="../images/Ganyu_Icon.webp"
+            alt="Ganyu from Genshin Impact"
+            class="character-image" />
+        </a>
+        <div class="role">
+          <p><strong>Element:</strong> Cryo</p>
+          <p><strong>Weapon:</strong> Bow</p>
+          <p><strong>Role:</strong> DPS</p>
+        </div>
+        <div class="btn">
+          <button id="GLore">Lore</button>
+          <button id="GGuide">Quick Guide</button>
+          <button id="GGallery">Gallery</button>
+          <button id="GMusicVideo">Music/Video</button>
+        </div>
+        <p class="description" id="ganyuover">
+          Ganyu is a quiet and gentle character from Genshin Impact. As the secretary of Yuehai Pavilion, she is known for her dedication and grace. Her Cryo abilities make her a powerful DPS character.
+        </p>
+        <p class="description" id="GanyuDescription" style="display: none">
+          Ganyu is a half-qilin adeptus who bridges the human and adepti worlds. Her Cryo element and bow allow her to deal devastating damage from afar, making her one of the most sought-after DPS characters.
+        </p>
+        <img
+          src="../images/Ganyu_Quick_Guide.png"
+          id="quickGuideImageGanyu"
+          alt="Ganyu Quick Guide"
+          style="display: none" />
+        <div id="GanyuGallery" style="display: none">
+          <div class="gallery-grid">
+            <img
+              src="https://i.pinimg.com/736x/example1.jpg"
+              id="pic1"
+              alt="Ganyu Image 1" />
+            <img
+              src="https://i.pinimg.com/736x/example2.jpg"
+              id="pic2"
+              alt="Ganyu Image 2" />
+            <img
+              src="https://i.pinimg.com/736x/example3.jpg"
+              id="pic3"
+              alt="Ganyu Image 3" />
+            <img
+              src="https://i.pinimg.com/736x/example4.jpg"
+              id="pic4"
+              alt="Ganyu Image 4" />
+            <img
+              src="https://i.pinimg.com/736x/example5.jpg"
+              id="pic5"
+              alt="Ganyu Image 5" />
+            <img
+              src="https://i.pinimg.com/736x/example6.jpg"
+              id="pic6"
+              alt="Ganyu Image 6" />
+            <img
+              src="https://i.pinimg.com/736x/example7.jpg"
+              id="pic7"
+              alt="Ganyu Image 7" />
+            <img
+              src="https://i.pinimg.com/736x/example8.jpg"
+              id="pic8"
+              alt="Ganyu Image 8" />
+          </div>
+        </div>
+        <div id="GanyuMusicVideoSection" style="display: none">
+          <h3>Character Demo - "Ganyu: Radiant Dreams" | Genshin Impact</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/FHRXP8ceeBU?si=nseaXpkCJwy_ZNZJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class"videos"></iframe>
+        </div>
+        <div class="navigation-buttons">
+          <a href="previous_character.html" class="btn-nav">Back</a>
+          <a href="mavuika.html" class="btn-nav">Next</a>
+        </div>
+      </section>
+    </main>
+    <div id="imageModal" class="modal" style="display: none">
+      <span class="close">&times;</span>
+      <button class="nav-btn prev-btn">&#10094;</button>
+      <img class="modal-content" id="modalImage" />
+      <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+    <script src="../javascripts/ganyu.js"></script>
+  </body>
+</html>
