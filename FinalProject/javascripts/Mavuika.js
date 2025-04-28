@@ -11,7 +11,7 @@ const mavuikaMusicVideoSection = document.getElementById(
 const mavuikaOverview = document.getElementById("mavuikaover");
 
 mavuikaLoreButton.onclick = function () {
-  alert("bro");
+
   mavuikaDescription.style.display = "block";
   mavuikaQuickGuideImage.style.display = "none";
   mavuikaGallerySection.style.display = "none";
