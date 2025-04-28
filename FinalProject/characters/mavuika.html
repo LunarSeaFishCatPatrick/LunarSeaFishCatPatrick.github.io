@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mavuika Guide</title>
+    <link rel="icon" href="../images/Kiana.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mavuika Guide</h1>
+      <nav class="navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="character-details">
+        <h2>Mavuika</h2>
+        <a href="mavuika.html">
+          <img
+            src="../images/Mavuika_Icon.webp"
+            alt="Mavuika from Genshin Impact"
+            class="character-image" />
+        </a>
+        <div class="role">
+          <p><strong>Element:</strong> Pyro</p>
+          <p><strong>Weapon:</strong> Claymore</p>
+          <p><strong>Role:</strong> Dps/Sub-DPS</p>
+        </div>
+        <div class="btn">
+          <button id="mavuikaLore">Lore</button>
+          <button id="mavuikaGuide">Quick Guide</button>
+          <button id="mavuikaGalleryBtn">Gallery</button>
+          <button id="mavuikaMusicVideo">Music/Video</button>
+        </div>
+        <p class="description" id="mavuikanover">
+          Mavuika, the enigmatic healer of the seas, is a Hydro wielder known
+          for her serene demeanor and unwavering dedication to protecting her
+          allies. Her mastery of water-based healing arts makes her an
+          indispensable member of any team.
+        </p>
+        <p class="description" id="mavuikaDescription" style="display: none">
+          Mavuika's abilities are deeply tied to the ocean's tranquility and
+          power. She channels the essence of water to heal and protect, while
+          her calm and composed nature inspires those around her. Despite her
+          gentle exterior, she harbors a fierce determination to safeguard her
+          loved ones.
+        </p>
+        <img
+          src="../images/Mavuika_On-Field_DPS_5.3_-_cuppacote.png"
+          id="quickGuideImagemavuika"
+          alt="Mavuika Quick Guide"
+          style="display: none" />
+        <div id="mavuikaGallery" style="display: none">
+          <div class="gallery-grid">
+            <img src="https://example.com/mavuika1.jpg" alt="Mavuika Image 1" />
+            <img src="https://example.com/mavuika2.jpg" alt="Mavuika Image 2" />
+            <img src="https://example.com/mavuika3.jpg" alt="Mavuika Image 3" />
+            <img src="https://example.com/mavuika4.jpg" alt="Mavuika Image 4" />
+            <img src="https://example.com/mavuika5.jpg" alt="Mavuika Image 5" />
+            <img src="https://example.com/mavuika6.jpg" alt="Mavuika Image 6" />
+            <img src="https://example.com/mavuika7.jpg" alt="Mavuika Image 7" />
+            <img src="https://example.com/mavuika8.jpg" alt="Mavuika Image 8" />
+          </div>
+        </div>
+        <div id="mavuikaMusicVideoSection" style="display: none">
+          <h3>Character Trailer - "Mavuika: Blazing Heart" | Genshin Impact</h3>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/fd5vxULcZYw?si=aePc4ggicVwX1lqh"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            class="videos"></iframe>
+        </div>
+        <div class="navigation-buttons">
+          <a href="previous_character.html" class="btn-nav">Back</a>
+          <a href="next_character.html" class="btn-nav">Next</a>
+        </div>
+      </section>
+    </main>
+    <div id="imageModal" class="modal" style="display: none">
+      <span class="close">&times;</span>
+      <button class="nav-btn prev-btn">&#10094;</button>
+      <img class="modal-content" id="modalImage" />
+      <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+    <script src="../javascripts/Mavuika.js"></script>
+  </body>
+</html>
