@@ -79,7 +79,19 @@ function login() {
   loginButton.style.pointerEvents = "auto";
   loginButton.style.backgroundColor = "#28a745"; // Change button color to green
 }
+function logout() {
+  // Remove the logged-in user from localStorage
+  localStorage.removeItem("loggedInUser");
 
+  // Reset the login button
+  const loginButton = document.getElementById("login-button");
+  loginButton.textContent = "Login";
+  loginButton.onclick = showLoginForm; // Change the button's behavior back to login
+  loginButton.style.pointerEvents = "auto";
+  loginButton.style.backgroundColor = ""; // Reset button color
+
+  alert("You have been logged out!");
+}
 // Toggle password visibility
 function togglePasswordVisibility(passwordFieldId, checkboxId) {
   const passwordField = document.getElementById(passwordFieldId);
