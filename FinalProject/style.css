@@ -244,7 +244,8 @@ header h1 {
 #quickGuideImagearle,
 #quickGuideImageNavia,
 #quickGuideImageNahida,
-#quickGuideImageMavuika{
+#quickGuideImageMavuika,
+#quickGuideImageGanyu{
   display: none;
   width: 100%;
   height: 100%;
@@ -261,7 +262,8 @@ header h1 {
 #quickGuideImagearle:hover,
 #quickGuideImageNavia:hover,
 #quickGuideImageNahida:hover,
-#quickGuideImageMavuika:hover{
+#quickGuideImageMavuika:hover,
+#quickGuideImageGanyu:hover{
   transform: none;
 }
 
