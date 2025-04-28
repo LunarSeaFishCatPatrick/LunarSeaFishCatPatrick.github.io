@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emilie Guide</title>
+    <link rel="icon" href="../images/Emilie.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Emilie Guide</h1>
+      <nav class="navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="character-details">
+        <h2>Emilie</h2>
+        <a href="emilie.html">
+          <img
+            src="../images/Emilie_Icon.webp"
+            alt="Emilie from Genshin Impact"
+            class="character-image" />
+        </a>
+        <div class="role">
+          <p><strong>Element:</strong> Pyro</p>
+          <p><strong>Weapon:</strong> Sword</p>
+          <p><strong>Role:</strong> Burst DPS</p>
+        </div>
+        <div class="btn">
+          <button id="ELore">Lore</button>
+          <button id="EGuide">Quick Guide</button>
+          <button id="EGallery">Gallery</button>
+          <button id="EMusicVideo">Music/Video</button>
+        </div>
+        <p class="description" id="emilieover">
+          Emilie is a passionate Pyro sword user known for explosive burst damage.
+        </p>
+        <p class="description" id="EmilieDescription" style="display: none">
+          With her Pyro element and sword, Emilie brings fiery devastation to the battlefield, excelling in burst damage scenarios.
+        </p>
+        <img
+          src="../images/Emilie_Quick_Guide.png"
+          id="quickGuideImageEmilie"
+          alt="Emilie Quick Guide"
+          style="display: none" />
+        <div id="EmilieGallery" style="display: none">
+          <div class="gallery-grid">
+            <img src="../images/Emilie1.jpg" alt="Emilie Image 1" />
+            <img src="../images/Emilie2.jpg" alt="Emilie Image 2" />
+            <img src="../images/Emilie2.jpg" alt="Emilie Image 3" />
+            <img src="../images/Emilie2.jpg" alt="Emilie Image 4" />
+            <img src="../images/Emilie2.jpg" alt="Emilie Image 5" />
+            <img src="../images/Emilie2.jpg" alt="Emilie Image 6" />
+            <img src="../images/Emilie2.jpg" alt="Emilie Image 7" />
+            <img src="../images/Emilie2.jpg" alt="Emilie Image 8" />
+          </div>
+        </div>
+        <div id="EmilieMusicVideoSection" style="display: none">
+          <h3>Character Demo - "Emilie: Iridescent Trail" | Genshin Impact</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/bSCzO5pcp0w?si=gYHt2cnJYlXEd-FV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="videos"></iframe>
+        </div>
+            <div class="navigation-buttons">
+          <a href="clorinde.html" class="btn-nav">Back</a>
+          <a href="eula.html" class="btn-nav">Next</a>
+        </div>
+      </section>
+    </main>
+       <div id="imageModal" class="modal" style="display: none">
+      <span class="close">&times;</span>
+      <button class="nav-btn prev-btn">&#10094;</button>
+      <img class="modal-content" id="modalImage" />
+      <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+    <script src="../javascripts/emilie.js"></script>
+  </body>
+</html>
