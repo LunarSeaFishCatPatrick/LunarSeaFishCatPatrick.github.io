@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zhongli Guide</title>
+    <link rel="icon" href="../images/Kiana.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/zhongli.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Zhongli Guide</h1>
+      <nav class="navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../characters.html">Characters</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="character-details">
+        <h2>Zhongli</h2>
+        <a href="zhongli.html">
+          <img
+            src="../images/Zhongli_Icon.webp"
+            alt="Zhongli from Genshin Impact"
+            class="character-image" />
+        </a>
+        <div class="role">
+          <p><strong>Element:</strong> Geo</p>
+          <p><strong>Weapon:</strong> Polearm</p>
+          <p><strong>Role:</strong> Support</p>
+        </div>
+        <div class="btn">
+          <button id="zhongliLore">Lore</button>
+          <button id="zhongliGuide">Quick Guide</button>
+          <button id="zhongliGalleryBtn">Gallery</button>
+          <button id="zhongliMusicVideo">Music/Video</button>
+        </div>
+        <p class="description" id="zhongliOverview">
+       Zhongli (Chinese: 钟离 Zhōnglí) is a playable Geo character in Genshin Impact.
+
+A consultant of the Wangsheng Funeral Parlor, he is later revealed to be the Geo Archon, Morax, who has decided to experience the world from the perspective of a mortal.
+        </p>
+        <p class="description" id="zhongliDescription" style="display: none">
+        On the surface, Zhongli currently serves as a consultant for the Wangsheng Funeral Parlor. He works under "The Director," Hu Tao, and seems to be well-versed in an abundance of subjects. This has earned him the respect of Liyue's citizens, granting him the label of an old-fashioned gentleman. However, this knowledge did not come from thin air. Zhongli is in truth the latest mortal vessel of the Geo Archon, Morax, also known as Liyue's overlord and protector: Rex Lapis. He now wanders the streets of Liyue, as he "ought to be here to witness its rise and fall."
+
+To the people of Liyue, their Archon carries many titles: the Geo Archon, the God of Contracts, the God of History, the Lord of Rock, the Groundbreaker, and the Warrior God among them. Having lived for over 6000 years, Zhongli has first-hand experience with much of Teyvat's history. He has presumably witnessed many of Teyvat's events, such as the cataclysm, the creation of the Chasm, and the fall of Aria, Sonnet and Canon. Nonetheless, he is most known for his cold-blooded participation in the Archon War, and his founding of Liyue.
+
+Around the beginning of the Archon War, Zhongli was the co-ruler of the prosperous Guili Assembly alongside the God of Dust, Guizhong, and the adepti. However, their combined forces could not stop the tides of war from taking the life of Guizhong. During a certain battle, despite their efforts and the aid of the adepti, Guizhong was overpowered by the opponent and the Guili Assembly was destroyed. After a massive flood swept through the area 3700 years ago, Zhongli was forced to move his people south of Mt. Tianheng and established Liyue Harbor, where it stands to this day.
+
+In present time, Zhongli has handed over his gnosis and with it, he has lifted the heavy weight of rulership he has borne for millennia. As the gnosis is now in Fatui possession, Zhongli is no longer inclined to act as Archon. He now spends his time reminiscing and enjoying the mortal experience. However, it is not to be believed that his story is even close to being over yet.
+        </p>
+        <img
+          src="../images/Zhongli_Quick_Guide.png"
+          id="quickGuideImageZhongli"
+          alt="Zhongli Quick Guide"
+          style="display: none" />
+        <div id="zhongliGallery" style="display: none">
+          <div class="gallery-grid">
+            <img
+              src="https://example.com/zhongli_image1.jpg"
+              alt="Zhongli Image 1" />
+            <img
+              src="https://example.com/zhongli_image2.jpg"
+              alt="Zhongli Image 2" />
+            <img
+              src="https://example.com/zhongli_image3.jpg"
+              alt="Zhongli Image 3" />
+            <img
+              src="https://example.com/zhongli_image4.jpg"
+              alt="Zhongli Image 4" />
+              <img
+              src="https://example.com/zhongli_image4.jpg"
+              alt="Zhongli Image 5" />
+              <img
+              src="https://example.com/zhongli_image4.jpg"
+              alt="Zhongli Image 6" />
+              <img
+              src="https://example.com/zhongli_image4.jpg"
+              alt="Zhongli Image 7" />
+              <img
+              src="https://example.com/zhongli_image4.jpg"
+              alt="Zhongli Image 4" />
+          </div>
+        </div>
+        <div id="zhongliMusicVideoSection" style="display: none">
+          <h3>Character Demo - "Zhongli: The Listener" | Genshin Impact</h3>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/4oBpaBEMBIM?si=fru71pIv6yYz7LgH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="videos"></iframe>
+        </div>
+        <div class="navigation-buttons">
+          <a href="chasca.html" class="btn-nav">Back</a>
+          <a href="citlali.html" class="btn-nav">Next</a>
+        </div>
+      </section>
+    </main>
+    <div id="imageModal" class="modal" style="display: none">
+      <span class="close">&times;</span>
+      <button class="nav-btn prev-btn">&#10094;</button>
+      <img class="modal-content" id="modalImage" />
+      <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+    <script src="../javascripts/Zhongli.js"></script>
+  </body>
+</html>
