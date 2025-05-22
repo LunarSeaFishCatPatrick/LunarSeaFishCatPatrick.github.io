@@ -245,7 +245,14 @@ header h1 {
 #quickGuideImageNavia,
 #quickGuideImageNahida,
 #quickGuideImageMavuika,
-#quickGuideImageGanyu{
+#quickGuideImageGanyu,
+#quickGuideImageZhongli,
+#quickGuideImageVenti,
+#quickGuideImageXilonen,
+#quickGuideImageCitlali,
+#quickGuideImageChasca,
+#quickGuideImageEula,
+#quickGuideImageEmilie {
   display: none;
   width: 100%;
   height: 100%;
@@ -263,7 +270,14 @@ header h1 {
 #quickGuideImageNavia:hover,
 #quickGuideImageNahida:hover,
 #quickGuideImageMavuika:hover,
-#quickGuideImageGanyu:hover{
+#quickGuideImageGanyu:hover,
+#quickGuideImageZhongli:hover,
+#quickGuideImageVenti:hover,
+#quickGuideImageXilonen:hover,
+#quickGuideImageCitlali:hover,
+#quickGuideImageChasca:hover,
+#quickGuideImageEula:hover,
+#quickGuideImageEmilie:hover {
   transform: none;
 }
 
