@@ -4,6 +4,7 @@ const btn = document.getElementById("lightCandlesBtn");
 const candlesContainer = document.querySelector(".candles");
 const letterContent = document.getElementById("letterContent");
 const finalMessage = document.getElementById("finalMessage");
+const ageInput = document.getElementById("ageInput"); // ✅ Get age input element
 
 // Open envelope animation
 wrapper.onclick = function () {
@@ -20,7 +21,7 @@ wrapper.onclick = function () {
 
 // Handle candle logic
 btn.addEventListener("click", () => {
-  const age = parseInt(document.getElementById("ageInput").value);
+  const age = parseInt(ageInput.value); // ✅ Use age from input
   if (!age || age < 1 || age > 120) {
     alert("Please enter a valid age between 1 and 120");
     return;
@@ -55,11 +56,12 @@ btn.addEventListener("click", () => {
 
   function extinguishNext() {
     if (idx < flames.length) {
+      flames[idx].style.animation = "none";
       flames[idx].style.opacity = "0";
       idx++;
-      setTimeout(extinguishNext, 50);
+      setTimeout(extinguishNext, 500);
     } else {
-      setTimeout(showFinalMessage, 800);
+      setTimeout(() => showFinalMessage(age), 1000); // ✅ Pass age to message
     }
   }
 
@@ -67,7 +69,7 @@ btn.addEventListener("click", () => {
 });
 
 // Show birthday message
-function showFinalMessage() {
+function showFinalMessage(age) {
   letterContent.style.opacity = "0";
 
   setTimeout(() => {
@@ -75,15 +77,12 @@ function showFinalMessage() {
     finalMessage.style.display = "block";
     wrapper.style.backgroundColor = "transparent";
 
-    // Get the age from the input
-    const age = document.getElementById("ageInput").value;
-
-    // Use the age in the message
+    // ✅ Age is now dynamic
     const message = `Happy ${age}th Birthday Ate🎉
 Wishing you a day filled with love, joy, and all the things that make you smile. You are an amazing sister, and I am so grateful to have you in my life. May this year bring you closer to your dreams and surround you with happiness. Enjoy your special day!`;
 
     const textElement = document.getElementById("typewriterText");
-    textElement.textContent = "";
+    textElement.textContent = ""; // Reset before typing
     let index = 0;
 
     function typeWriter() {
@@ -93,9 +92,7 @@ Wishing you a day filled with love, joy, and all the things that make you smile.
         setTimeout(typeWriter, 40);
       } else {
         const sisterPhoto = document.getElementById("sisterPhoto");
-        if (sisterPhoto) {
-          sisterPhoto.classList.add("visible");
-        }
+        sisterPhoto.style.opacity = "1";
       }
     }
 
