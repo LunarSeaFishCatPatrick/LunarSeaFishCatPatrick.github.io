@@ -15,15 +15,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const fullText = `Happy Valentine's Day, Gie!
 
-Gusto ko lang sabihin na sobrang special mo sa akin. I mean it! Salamat sa lahat ng happy moments natin na talagang nagpapasaya ng araw ko. Kahit lose streak tayo sa ML, it feels good and safe pa rin kasi ikaw ang kalaro ko, same din sa pag-explore natin sa Genshin.
+Gusto ko lang sabihin na sobrang special mo sa akin. I mean it Salamat sa lahat ng happy moments natin na talagang nagpapasaya ng araw ko. Kahit lose streak tayo sa ML, it feels good and safe pa rin kasi ikaw ang kalaro ko, same din sa pag-explore natin sa Genshin.
 
 Thank you rin sa pag-watch ng stream ko lalo na nung simula na marami pa akong technical problems, salamat kasi naging patient ka at nanatili ka lang doon. Salamat sa pag-notice ng small details about me and for listening to all my yaps at mga crazy things na sinasabi ko. It really means a lot to me na nandiyan ka.
 
-Alam kong mabigat ang mga iniisip mo lately gaya ng pressure sa job hunt at yung mga 3 AM thoughts na nagpapanatili sayong gising. Pero bilib na bilib ako sa tatag mo.
+Alam kong mabigat ang mga iniisip mo lately gaya ng pressure sa job hunt at yung mga 3 AM thoughts na nagpapanatili sayong gising. Pero i believe you can do it.
 
 Nandito lang ako para sayo. Kung kailangan mo ng kausap, mag vent, o kahit tumahimik lang muna kapag masyadong maingay ang isip mo, dito lang ako para samahan ka. Chat mo lang ako sa TikTok, Discord, ML, or any soc med.
 
-Actually, may isa pa sana akong gustong sabihin sa'yo. If okay lang, gusto sana kitang makausap nang maayos mamayang gabi sa Discord. Gusto ko sanang maging official sa'yo na balak kitang ligawan.
+Actually, may isa pa sana akong gustong sabihin sayo. If okay lang, gusto sana kitang makausap mamayang gabi sa Discord. Gusto ko sanang maging official sayo na liligawan kita.
 -Patrick Angelo`;
 
   let currentIndex = 0;
@@ -103,3 +103,4 @@ Actually, may isa pa sana akong gustong sabihin sa'yo. If okay lang, gusto sana 
     }
   });
 });
+
