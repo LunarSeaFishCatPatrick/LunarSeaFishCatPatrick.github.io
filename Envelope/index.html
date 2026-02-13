@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valentine Envelope</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="envelope" id="envelope">
+      <button id="toggle" class="emoji-button" aria-label="Open envelope">
+        💜
+      </button>
+      <div class="flap"></div>
+      <div class="card" id="card">
+        <!-- Letter/Typewriter message -->
+        <pre id="typewriter-text"></pre>
+        <button id="next-btn" class="hidden" aria-label="Next">Next</button>
+        <!-- Valentine Question -->
+        <div class="valentine-question hidden" id="valentine-question">
+          <p class="question">Will you be my Valentine?</p>
+          <div class="buttons">
+            <button id="yes-btn" aria-label="Yes">Yes</button>
+            <button id="no-btn" aria-label="No">No</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #ffcccc, #ff9999);
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.bouquet {
+  text-align: center;
+}
+
+.vase {
+  width: 100px;
+  height: 80px;
+  background: #ff69b4;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+.vase::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: #ff69b4;
+  border-radius: 50%;
+}
+
+.flowers {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.flower {
+  width: 50px;
+  height: 100px;
+  background: #ff0000;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.flower::before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5px;
+  height: 30px;
+  background: #228b22;
+}
+
+.flower.bloomed {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.message {
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
